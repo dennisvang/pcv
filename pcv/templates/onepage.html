@@ -1,12 +1,49 @@
 {% extends 'base.html' %}
 
+{% block style %}
+    {{ super() }}
+    <style>
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            background-color: cadetblue;
+            flex: 0 0 60mm;
+        }
+
+        .right {
+            background-color: mediumpurple;
+            flex: 1;
+        }
+
+        .content {
+            padding: 5mm;
+        }
+
+    </style>
+{% endblock %}
+
+{% block title %}
+    CV for {{ person.name }}
+{% endblock %}
+
 {% block pages %}
-<div class="page">
-    <div class="column-left">
-        left
+    <div class="page">
+        <div class="wrapper">
+            <div class="left">
+                {% include 'person.html' %}
+                {% include 'contact.html' %}
+                {% include 'online.html' %}
+                {% include 'languages.html' %}
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
     </div>
-    <div class="column-right">
-        right
-    </div>
-</div>
 {% endblock %}

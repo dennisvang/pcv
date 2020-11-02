@@ -1,0 +1,10 @@
+<div class="content" id="languages">
+    <table>
+    {% for name, level in languages %}
+        <tr>
+        <td>{{ name.capitalize() }}:</td>
+        <td>{{ level|as_circles }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>

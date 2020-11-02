@@ -1,0 +1,9 @@
+<div class="content" id="personal">
+    <h3>{{ person.name }}</h3>
+    <div>{{ person.birth }}</div>
+    {% if person.photo %}
+        <div>
+            <img src="{{ person.photo }}" alt="photograph of {{ person.name }}">
+        </div>
+    {% endif %}
+</div>

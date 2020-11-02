@@ -5,4 +5,4 @@ from pcv import render
 current_folder = pathlib.Path(__file__).parent.resolve()
 
 with open(current_folder.joinpath('cv.html'), 'w') as output_file:
-    output_file.write(render())
+    output_file.write(render(data_file=current_folder.joinpath('cv.json')))
