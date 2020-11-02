@@ -2,7 +2,7 @@
   "person": {
     "name": "John Doe",
     "birth": "1920 Nov 2",
-    "photo": ""
+    "photo": "sloth.png"
   },
   "contact": {
     "telephone": "0123456789",

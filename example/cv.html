@@ -69,6 +69,18 @@
             padding: 5mm;
         }
 
+        #image {
+            display: flex;
+            justify-content: center;
+            margin-top: 5mm;
+            width: 100%;
+        }
+
+        img {
+            width: 45mm;
+            height: auto;
+        }
+
     </style>
 
     <title>
@@ -81,22 +93,26 @@
     <div class="page">
         <div class="wrapper">
             <div class="left">
-                <div class="content">
+                <div class="content" id="personal">
     <h3>John Doe</h3>
     <div>1920 Nov 2</div>
     
+        <div id="image">
+            <img src="sloth.png" alt="photograph of John Doe">
+        </div>
+    
 </div>
-                <div class="content">
+                <div class="content" id="contact">
     <div>0123456789</div>
     <div>john.doe@email.com</div>
     <div>Long road 123, Smalltown, GB</div>
 </div>
-                <div class="content">
+                <div class="content" id="online">
     
         <div>https://stackoverflow.com/users/000000/johndoe</div>
     
 </div>
-                <div class="content">
+                <div class="content" id="languages">
     <table>
     
         <tr>
