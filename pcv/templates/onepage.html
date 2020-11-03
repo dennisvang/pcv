@@ -7,6 +7,10 @@
 
     <style>
 
+        body {
+            font-size: small;
+        }
+
         .flex-container {
             display: flex;
             flex-direction: row;
@@ -16,7 +20,7 @@
 
         .left {
             background-color: cadetblue;
-            flex: 0 0 60mm;
+            flex: 0 0 65mm;
         }
 
         .right {
@@ -30,6 +34,23 @@
 
         .label {
             text-decoration: underline;
+        }
+
+        .organization {
+            font-style: italic;
+        }
+
+        .period {
+            white-space: nowrap;
+        }
+
+        .column-header {
+            text-align: right;
+        }
+
+        .column-data ul {
+            padding-left: 2em;
+            text-align: left;
         }
 
         #online .list-item {
@@ -77,6 +98,9 @@
                 {% endwith %}
             </div>
             <div class="right">
+                {% with section_id='motto', data=person %}
+                    {% include 'motto.html' %}
+                {% endwith %}
                 {% with section_id='experience', data=experience %}
                     {% include 'experience.html' %}
                 {% endwith %}

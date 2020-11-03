@@ -4,12 +4,20 @@
 
     <table>
         {% for item in data.list|sort_and_group(date_field='date', group_field='organization') %}
-            <tr class="table-row table-head">
-                <td colspan="2">{{ item.organization }}</td>
-            </tr>
+            {% if item.organization %}
+                <tr class="table-row">
+                    <td colspan="2" class="organization">
+                        {{ item.organization }}
+                    </td>
+                </tr>
+            {% endif %}
             <tr class="table-row">
-                <td>{{ item.date|reformat('%b %Y') }}</td>
-                <td>{{ item.degree }}</td>
+                <td>
+                    {{ item.date|reformat('%b %Y') }}
+                </td>
+                <td>
+                    {{ item.degree }} {{ item.description }}
+                </td>
             </tr>
         {% endfor %}
     </table>

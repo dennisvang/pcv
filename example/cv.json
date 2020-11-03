@@ -2,7 +2,8 @@
   "person": {
     "name": "Any Person",
     "birth": "1970 Jan 1",
-    "photo": "sloth.png"
+    "photo": "sloth.png",
+    "motto": "To be an absolute expert in my field and, on top of that, to be the embodiment of team spirit."
   },
   "contact": {
     "telephone": "0123456789",
@@ -16,8 +17,8 @@
   "online": {
     "label": "web",
     "list": [
-      "https://stackoverflow.com/users/0000000/anyperson",
-      "https://github.com/anyperson"
+      "stackoverflow.com/users/0000000",
+      "github.com/anyperson"
     ]
   },
   "languages": {
@@ -35,16 +36,19 @@
       {
         "date": "1990-12-31",
         "degree": "Ph.D.",
+        "description": "Fuzzy logic",
         "organization": "Some University"
       },
       {
         "date": "1986-07-01",
         "degree": "M.Sc.",
+        "description": "Horology",
         "organization": "Another University"
       },
       {
         "date": "1984-08-15",
         "degree": "B.Sc.",
+        "description": "Horology",
         "organization": "Another University"
       }
     ]
@@ -56,25 +60,40 @@
         "start": "1996-12-24",
         "end": "present",
         "organization": "ACME Inc.",
-        "function": "chief executive chair warmer",
-        "responsibilities": [
-          "keeping chair warm"
+        "function": "Chief Executive Chair Warmer",
+        "tasks": [
+          "ensure continuity of chair warmth",
+          "maintain physical comfort levels"
         ],
         "highlights": [
-          "kept a bigger chair comfortably warm"
+          "achieved optimal chair temperature at a fraction of the original cost"
         ]
       },
       {
-        "start": "1990-01-15",
+        "start": "1992-01-15",
         "end": "1996-12-23",
         "organization": "ACME Inc.",
-        "function": "junior chair warmer",
-        "responsibilities": [
-          "keeping chair warm"
+        "function": "Junior Chair Warmer",
+        "tasks": [
+          "ensure chair does not cool off",
+          "engage in fruitful conversation"
         ],
         "highlights": [
           "kept chair comfortably warm"
         ]
+      },
+      {
+        "start": "1990-01-01",
+        "end": "1992-01-01",
+        "organization": "Heligoland Railways",
+        "function": "Operations specialist",
+        "tasks": [
+          "ensure smooth railway operations"
+        ],
+        "highlights": [
+          "no delays whatsoever"
+        ]
+
       }
     ]
   }

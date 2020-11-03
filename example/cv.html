@@ -19,6 +19,7 @@
 
         .page {
             break-after: page;
+            
         }
     }
 
@@ -36,13 +37,11 @@
         }
 
         .page {
-            /*
-            absolute length units (e.g. mm) on screen are only approximate
-            (depending on physical pixel size vs reference pixel size)
-            https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units
-            */
-            margin: 5mm;  /* keeps some distance between pages */
-            padding: 1mm;  /* acts as "page" margin */
+            
+            
+            
+            margin: 5mm;  
+            padding: 1mm;  
             width: 210mm;
             height: 297mm;
             background-color: seashell;
@@ -56,6 +55,10 @@
 
     <style>
 
+        body {
+            font-size: small;
+        }
+
         .flex-container {
             display: flex;
             flex-direction: row;
@@ -65,7 +68,7 @@
 
         .left {
             background-color: cadetblue;
-            flex: 0 0 60mm;
+            flex: 0 0 65mm;
         }
 
         .right {
@@ -79,6 +82,23 @@
 
         .label {
             text-decoration: underline;
+        }
+
+        .organization {
+            font-style: italic;
+        }
+
+        .period {
+            white-space: nowrap;
+        }
+
+        .column-header {
+            text-align: right;
+        }
+
+        .column-data ul {
+            padding-left: 2em;
+            text-align: left;
         }
 
         #online .list-item {
@@ -156,9 +176,9 @@
     
 
     
-        <div class="list-item">https://stackoverflow.com/users/0000000/anyperson</div>
+        <div class="list-item">stackoverflow.com/users/0000000</div>
     
-        <div class="list-item">https://github.com/anyperson</div>
+        <div class="list-item">github.com/anyperson</div>
     
 
 
@@ -217,28 +237,46 @@
 
     <table>
         
-            <tr class="table-row table-head">
-                <td colspan="2">Some University</td>
-            </tr>
+            
+                <tr class="table-row">
+                    <td colspan="2" class="organization">
+                        Some University
+                    </td>
+                </tr>
+            
             <tr class="table-row">
-                <td>Dec 1990</td>
-                <td>Ph.D.</td>
+                <td>
+                    Dec 1990
+                </td>
+                <td>
+                    Ph.D. Fuzzy logic
+                </td>
             </tr>
         
-            <tr class="table-row table-head">
-                <td colspan="2">Another University</td>
-            </tr>
+            
+                <tr class="table-row">
+                    <td colspan="2" class="organization">
+                        Another University
+                    </td>
+                </tr>
+            
             <tr class="table-row">
-                <td>Jul 1986</td>
-                <td>M.Sc.</td>
+                <td>
+                    Jul 1986
+                </td>
+                <td>
+                    M.Sc. Horology
+                </td>
             </tr>
         
-            <tr class="table-row table-head">
-                <td colspan="2"></td>
-            </tr>
+            
             <tr class="table-row">
-                <td>Aug 1984</td>
-                <td>B.Sc.</td>
+                <td>
+                    Aug 1984
+                </td>
+                <td>
+                    B.Sc. Horology
+                </td>
             </tr>
         
     </table>
@@ -249,6 +287,25 @@
                 
             </div>
             <div class="right">
+                
+                    <div class="section" id="motto">
+    
+    
+        
+    
+
+    <h1 class="motto-header">
+        Any Person
+    </h1>
+
+    <blockquote>
+        "To be an absolute expert in my field and, on top of that, to be the embodiment of team spirit."
+    </blockquote>
+
+
+</div>
+
+                
                 
                     <div class="section" id="experience">
     
@@ -262,21 +319,126 @@
 
     <table>
         
-            <tr class="table-row table-head">
-                <td colspan="2">ACME Inc.</td>
+            <tr class="table-row">
+                <td colspan="2" class="organization">
+                    ACME Inc.
+                </td>
             </tr>
             <tr class="table-row">
-                <td>1996-present:</td>
-                <td>chief executive chair warmer</td>
+                <td class="period">
+                    1996 - present:
+                </td>
+                <td class="function">
+                    Chief Executive Chair Warmer
+                </td>
             </tr>
+            <tr>
+                <td class="column-header">
+                    Tasks
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">ensure continuity of chair warmth</li>
+                        
+                            <li class="list-item">maintain physical comfort levels</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-header">
+                    Highlights
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">achieved optimal chair temperature at a fraction of the original cost</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+
         
-            <tr class="table-row table-head">
-                <td colspan="2"></td>
+            <tr class="table-row">
+                <td colspan="2" class="organization">
+                    
+                </td>
             </tr>
             <tr class="table-row">
-                <td>1990-1996:</td>
-                <td>junior chair warmer</td>
+                <td class="period">
+                    1992 - 1996:
+                </td>
+                <td class="function">
+                    Junior Chair Warmer
+                </td>
             </tr>
+            <tr>
+                <td class="column-header">
+                    Tasks
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">ensure chair does not cool off</li>
+                        
+                            <li class="list-item">engage in fruitful conversation</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-header">
+                    Highlights
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">kept chair comfortably warm</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+
+        
+            <tr class="table-row">
+                <td colspan="2" class="organization">
+                    Heligoland Railways
+                </td>
+            </tr>
+            <tr class="table-row">
+                <td class="period">
+                    1990 - 1992:
+                </td>
+                <td class="function">
+                    Operations specialist
+                </td>
+            </tr>
+            <tr>
+                <td class="column-header">
+                    Tasks
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">ensure smooth railway operations</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-header">
+                    Highlights
+                </td>
+                <td class="column-data">
+                    <ul>
+                        
+                            <li class="list-item">no delays whatsoever</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+
         
     </table>
 

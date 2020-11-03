@@ -4,13 +4,44 @@
 
     <table>
         {% for item in data.list|sort_and_group(date_field='end', group_field='organization') %}
-            <tr class="table-row table-head">
-                <td colspan="2">{{ item.organization }}</td>
+            <tr class="table-row">
+                <td colspan="2" class="organization">
+                    {{ item.organization }}
+                </td>
             </tr>
             <tr class="table-row">
-                <td>{{ item.start|reformat('%Y') }}-{{ item.end|reformat('%Y') }}:</td>
-                <td>{{ item.function }}</td>
+                <td class="period">
+                    {{ item.start|reformat('%Y') }} - {{ item.end|reformat('%Y') }}:
+                </td>
+                <td class="function">
+                    {{ item.function }}
+                </td>
             </tr>
+            <tr>
+                <td class="column-header">
+                    Tasks
+                </td>
+                <td class="column-data">
+                    <ul>
+                        {% for task in item.tasks %}
+                            <li class="list-item">{{ task }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-header">
+                    Highlights
+                </td>
+                <td class="column-data">
+                    <ul>
+                        {% for highlight in item.highlights %}
+                            <li class="list-item">{{ highlight }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+
         {% endfor %}
     </table>
 

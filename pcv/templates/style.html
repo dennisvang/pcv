@@ -1,7 +1,7 @@
 <style>
 
     * {
-        {# make sure padding and border are included in all width/height #}
+        {# ensure padding and border are included in width/height everywhere #}
         box-sizing: border-box;
     }
 
@@ -13,6 +13,7 @@
 
         .page {
             break-after: page;
+            {# todo: background should extend to bottom of page #}
         }
     }
 
@@ -30,13 +31,11 @@
         }
 
         .page {
-            /*
-            absolute length units (e.g. mm) on screen are only approximate
-            (depending on physical pixel size vs reference pixel size)
-            https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units
-            */
-            margin: 5mm;  /* keeps some distance between pages */
-            padding: 1mm;  /* acts as "page" margin */
+            {# absolute length units (e.g. mm) on screen are only approximate #}
+            {# (depending on physical pixel size vs reference pixel size) #}
+            {# https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units #}
+            margin: 5mm;  {# keeps some distance between pages #}
+            padding: 1mm;  {# acts as "page" margin #}
             width: 210mm;
             height: 297mm;
             background-color: seashell;
