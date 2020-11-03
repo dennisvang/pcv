@@ -1,5 +1,9 @@
-<div class="content" id="contact">
-    <div>{{ contact.telephone }}</div>
-    <div>{{ contact.email }}</div>
-    <div>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.country }}</div>
-</div>
+{% extends 'section.html' %}
+{% block content %}
+    {{ super() }}
+
+    <div><span class="fa fa-phone"></span> {{ data.telephone }}</div>
+    <div><span class="fa fa-at"></span> {{ data.email }}</div>
+    <div><span class="fa fa-home"></span> {{ data.address.street }}, {{ data.address.city }}, {{ data.address.country }}</div>
+
+{% endblock %}

@@ -6,10 +6,15 @@
     
         <style>
 
+    * {
+        
+        box-sizing: border-box;
+    }
+
     @media print {
         @page {
             size: A4 portrait;
-            margin: 10mm;
+            margin: 1mm;
         }
 
         .page {
@@ -36,19 +41,22 @@
             (depending on physical pixel size vs reference pixel size)
             https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units
             */
-            margin: 5mm;
-            padding: 10mm;
-            width: Calc(210mm - 10mm - 10mm);
-            height: Calc(297mm - 10mm - 10mm);
+            margin: 5mm;  /* keeps some distance between pages */
+            padding: 1mm;  /* acts as "page" margin */
+            width: 210mm;
+            height: 297mm;
             background-color: seashell;
         }
     }
 
 </style>
     
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
 
-        .wrapper {
+        .flex-container {
             display: flex;
             flex-direction: row;
             width: 100%;
@@ -65,81 +73,217 @@
             flex: 1;
         }
 
-        .content {
+        .section {
             padding: 5mm;
         }
 
-        #image {
+        .label {
+            text-decoration: underline;
+        }
+
+        #online .list-item {
+            font-size: smaller;
+        }
+
+        #image-container {
             display: flex;
             justify-content: center;
-            margin-top: 5mm;
             width: 100%;
         }
 
         img {
-            width: 45mm;
+            width: 40mm;
             height: auto;
+            margin: 5mm;
+            filter: grayscale(100%);
         }
 
     </style>
 
     <title>
-    CV for John Doe
+    CV for Any Person
 </title>
 </head>
 <body>
 <div class="page-container">
     
     <div class="page">
-        <div class="wrapper">
+        <div class="flex-container">
             <div class="left">
-                <div class="content" id="personal">
-    <h3>John Doe</h3>
-    <div>1920 Nov 2</div>
+                
+                    <div class="section" id="person">
     
-        <div id="image">
-            <img src="sloth.png" alt="photograph of John Doe">
+    
+        
+    
+
+    <div id="name">Any Person</div>
+    <div id="birth">1970 Jan 1</div>
+    
+        <div id="image-container">
+            <img src="sloth.png" alt="photograph of Any Person">
         </div>
     
+
+
 </div>
-                <div class="content" id="contact">
-    <div>0123456789</div>
-    <div>john.doe@email.com</div>
-    <div>Long road 123, Smalltown, GB</div>
-</div>
-                <div class="content" id="online">
+
+                
+                
+                    <div class="section" id="contact">
     
-        <div>https://stackoverflow.com/users/000000/johndoe</div>
     
+        
+    
+
+    <div><span class="fa fa-phone"></span> 0123456789</div>
+    <div><span class="fa fa-at"></span> a.person@email.com</div>
+    <div><span class="fa fa-home"></span> Long road 123, Smalltown, GB</div>
+
+
 </div>
-                <div class="content" id="languages">
+
+                
+                
+                    <div class="section" id="online">
+    
+    
+        
+            <div class="label">
+                Web
+            </div>
+        
+    
+
+    
+        <div class="list-item">https://stackoverflow.com/users/0000000/anyperson</div>
+    
+        <div class="list-item">https://github.com/anyperson</div>
+    
+
+
+</div>
+
+                
+                
+                    <div class="section" id="languages">
+    
+    
+        
+            <div class="label">
+                Languages
+            </div>
+        
+    
+
     <table>
-    
-        <tr>
-        <td>Dutch:</td>
-        <td>●●●●●</td>
-        </tr>
-    
-        <tr>
-        <td>English:</td>
-        <td>●●●●○</td>
-        </tr>
-    
-        <tr>
-        <td>French:</td>
-        <td>●●○○○</td>
-        </tr>
-    
-        <tr>
-        <td>German:</td>
-        <td>●○○○○</td>
-        </tr>
-    
+        
+            <tr class="table-row">
+                <td>Dutch:</td>
+                <td>●●●●●</td>
+            </tr>
+        
+            <tr class="table-row">
+                <td>English:</td>
+                <td>●●●●○</td>
+            </tr>
+        
+            <tr class="table-row">
+                <td>French:</td>
+                <td>●●○○○</td>
+            </tr>
+        
+            <tr class="table-row">
+                <td>German:</td>
+                <td>●○○○○</td>
+            </tr>
+        
     </table>
+
+
 </div>
+
+                
+                
+                    <div class="section" id="education">
+    
+    
+        
+            <div class="label">
+                Education
+            </div>
+        
+    
+
+    <table>
+        
+            <tr class="table-row table-head">
+                <td colspan="2">Some University</td>
+            </tr>
+            <tr class="table-row">
+                <td>Dec 1990</td>
+                <td>Ph.D.</td>
+            </tr>
+        
+            <tr class="table-row table-head">
+                <td colspan="2">Another University</td>
+            </tr>
+            <tr class="table-row">
+                <td>Jul 1986</td>
+                <td>M.Sc.</td>
+            </tr>
+        
+            <tr class="table-row table-head">
+                <td colspan="2"></td>
+            </tr>
+            <tr class="table-row">
+                <td>Aug 1984</td>
+                <td>B.Sc.</td>
+            </tr>
+        
+    </table>
+
+
+</div>
+
+                
             </div>
             <div class="right">
+                
+                    <div class="section" id="experience">
+    
+    
+        
+            <div class="label">
+                Work experience
+            </div>
+        
+    
 
+    <table>
+        
+            <tr class="table-row table-head">
+                <td colspan="2">ACME Inc.</td>
+            </tr>
+            <tr class="table-row">
+                <td>1996-present:</td>
+                <td>chief executive chair warmer</td>
+            </tr>
+        
+            <tr class="table-row table-head">
+                <td colspan="2"></td>
+            </tr>
+            <tr class="table-row">
+                <td>1990-1996:</td>
+                <td>junior chair warmer</td>
+            </tr>
+        
+    </table>
+
+
+</div>
+
+                
             </div>
         </div>
     </div>

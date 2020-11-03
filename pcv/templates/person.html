@@ -1,9 +1,13 @@
-<div class="content" id="personal">
-    <h3>{{ person.name }}</h3>
-    <div>{{ person.birth }}</div>
-    {% if person.photo %}
-        <div id="image">
-            <img src="{{ person.photo }}" alt="photograph of {{ person.name }}">
+{% extends 'section.html' %}
+{% block content %}
+    {{ super() }}
+
+    <div id="name">{{ data.name }}</div>
+    <div id="birth">{{ data.birth }}</div>
+    {% if data.photo %}
+        <div id="image-container">
+            <img src="{{ data.photo }}" alt="photograph of {{ data.name }}">
         </div>
     {% endif %}
-</div>
+
+{% endblock %}

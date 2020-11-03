@@ -1,5 +1,9 @@
-<div class="content" id="online">
-    {% for item in online %}
-        <div>{{ item }}</div>
+{% extends 'section.html' %}
+{% block content %}
+    {{ super() }}
+
+    {% for item in data.list %}
+        <div class="list-item">{{ item }}</div>
     {% endfor %}
-</div>
+
+{% endblock %}

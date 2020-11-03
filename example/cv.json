@@ -1,25 +1,81 @@
 {
   "person": {
-    "name": "John Doe",
-    "birth": "1920 Nov 2",
+    "name": "Any Person",
+    "birth": "1970 Jan 1",
     "photo": "sloth.png"
   },
   "contact": {
     "telephone": "0123456789",
-    "email": "john.doe@email.com",
+    "email": "a.person@email.com",
     "address": {
       "street": "Long road 123",
       "city": "Smalltown",
       "country": "GB"
     }
   },
-  "online": [
-    "https://stackoverflow.com/users/000000/johndoe"
-  ],
-  "languages": [
-    ["dutch", 5],
-    ["english", 4],
-    ["french", 2],
-    ["german", 1]
-  ]
+  "online": {
+    "label": "web",
+    "list": [
+      "https://stackoverflow.com/users/0000000/anyperson",
+      "https://github.com/anyperson"
+    ]
+  },
+  "languages": {
+    "label": "languages",
+    "list":[
+      ["dutch", 5],
+      ["english", 4],
+      ["french", 2],
+      ["german", 1]
+    ]
+  },
+  "education": {
+    "label": "education",
+    "list": [
+      {
+        "date": "1990-12-31",
+        "degree": "Ph.D.",
+        "organization": "Some University"
+      },
+      {
+        "date": "1986-07-01",
+        "degree": "M.Sc.",
+        "organization": "Another University"
+      },
+      {
+        "date": "1984-08-15",
+        "degree": "B.Sc.",
+        "organization": "Another University"
+      }
+    ]
+  },
+  "experience": {
+    "label": "work experience",
+    "list": [
+      {
+        "start": "1996-12-24",
+        "end": "present",
+        "organization": "ACME Inc.",
+        "function": "chief executive chair warmer",
+        "responsibilities": [
+          "keeping chair warm"
+        ],
+        "highlights": [
+          "kept a bigger chair comfortably warm"
+        ]
+      },
+      {
+        "start": "1990-01-15",
+        "end": "1996-12-23",
+        "organization": "ACME Inc.",
+        "function": "junior chair warmer",
+        "responsibilities": [
+          "keeping chair warm"
+        ],
+        "highlights": [
+          "kept chair comfortably warm"
+        ]
+      }
+    ]
+  }
 }
