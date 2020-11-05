@@ -96,6 +96,9 @@
                 {% with section_id='education', data=education %}
                     {% include 'education.html' %}
                 {% endwith %}
+                {% with section_id='references', data=references %}
+                    {% include 'references.html' %}
+                {% endwith %}
             </div>
             <div class="right">
                 {% with section_id='motto', data=person %}
