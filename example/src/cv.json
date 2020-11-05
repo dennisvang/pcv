@@ -8,7 +8,7 @@
   "contact": {
     "label": "contact",
     "telephone": "0123456789",
-    "email": "a.person@email.com",
+    "email": "s.else@email.com",
     "address": {
       "street": "Long road 123",
       "city": "Smalltown",
@@ -19,7 +19,7 @@
     "label": "web",
     "list": [
       "stackoverflow.com: 0000000",
-      "github.com: anyperson"
+      "github.com: justsomeoneelse"
     ]
   },
   "languages": {

@@ -6,7 +6,7 @@
         {% for name, level in data.list %}
             <tr class="table-row">
                 <td>{{ name|capitalize }}:</td>
-                <td>{{ level|as_circles }}</td>
+                <td class="circles">{{ level|as_circles }}</td>
             </tr>
         {% endfor %}
     </table>

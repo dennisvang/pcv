@@ -4,11 +4,64 @@
     {{ super() }}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
 
     <style>
 
         body {
+            font-family: "Alegreya Sans";
             font-size: small;
+        }
+
+        h1 {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.2ch;
+            color: #438496;
+        }
+
+        .label {
+            text-transform: uppercase;
+            letter-spacing: 0.3ch;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        div.right div.label {
+            color: #438496;
+        }
+
+        blockquote {
+            font-style: italic;
+        }
+
+        img {
+            filter: grayscale(100%);
+        {# use content-box to prevent image resizing if we set padding #}
+            box-sizing: content-box;
+            width: 35mm;  {# official passport photo is 35mm x 45mm #}
+            height: auto;
+        {# use display block and auto margins to center horizontally #}
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+        }
+
+        .polaroid {
+            box-sizing: content-box;
+            width: 35mm;
+            height: auto;
+            padding: 3mm 3mm 10mm 3mm;
+            {#border: 1px solid dimgray;#}
+            box-shadow: 5px 5px 5px dimgray;
+            transform: rotate(5deg);
+            filter: grayscale(100%);
+            background-color: white;
+        }
+
+        .image-container {
+            width: 100%;
         }
 
         .flex-container {
@@ -19,29 +72,42 @@
         }
 
         .left {
-            background-color: cadetblue;
-            flex: 0 0 65mm;
+            background-color: #438496;
+            color: white;
+            flex: 0 0 60mm;
+            padding: 5mm;
         }
 
         .right {
-            background-color: mediumpurple;
+            background-color: transparent;
             flex: 1;
+            padding: 5mm;
+        }
+
+        #motto {
+            background-color: transparent;
+            color: black;
+        }
+
+        .circles {
+            font-size: x-small;
+            letter-spacing: 0.3ch;
         }
 
         .section {
             padding: 5mm;
         }
 
-        .label {
-            text-decoration: underline;
-        }
-
         .organization {
-            font-style: italic;
+            font-weight: bold;
         }
 
         .period {
             white-space: nowrap;
+        }
+
+        .function {
+            font-style: italic;
         }
 
         .column-header {
@@ -54,20 +120,7 @@
         }
 
         #online .list-item {
-            font-size: smaller;
-        }
-
-        #image-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        img {
-            width: 40mm;
-            height: auto;
-            margin: 5mm;
-            filter: grayscale(100%);
+            font-size: small;
         }
 
     </style>
