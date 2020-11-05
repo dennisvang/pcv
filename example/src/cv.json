@@ -1,11 +1,12 @@
 {
   "person": {
-    "name": "Any Person",
+    "name": "Someone Else",
     "birth": "1970 Jan 1",
     "photo": "sloth.png",
-    "motto": "To be an absolute expert in my field and, on top of that, to be the embodiment of team spirit."
+    "motto": "I'm just a great person with incredible skills and without any shortcomings whatsoever."
   },
   "contact": {
+    "label": "contact",
     "telephone": "0123456789",
     "email": "a.person@email.com",
     "address": {
@@ -17,8 +18,8 @@
   "online": {
     "label": "web",
     "list": [
-      "stackoverflow.com/users/0000000",
-      "github.com/anyperson"
+      "stackoverflow.com: 0000000",
+      "github.com: anyperson"
     ]
   },
   "languages": {
@@ -50,6 +51,15 @@
         "degree": "B.Sc.",
         "description": "Horology",
         "organization": "Another University"
+      }
+    ]
+  },
+  "references": {
+    "label": "references",
+    "list": [
+      {
+        "name": "Erwin Ployer",
+        "email": "e.m.ployer@email.com"
       }
     ]
   },

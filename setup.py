@@ -19,5 +19,5 @@ setuptools.setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.7',  # we use datetime.fromisoformat()
+    python_requires='>=3.8',  # for shutil.copytree dirs_exist_ok
 )
