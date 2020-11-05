@@ -59,7 +59,8 @@
     "list": [
       {
         "name": "Erwin Ployer",
-        "email": "e.m.ployer@email.com"
+        "email": "e.m.ployer@email.com",
+        "organization": "ACME inc."
       }
     ]
   },
