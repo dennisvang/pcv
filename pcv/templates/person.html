@@ -2,12 +2,33 @@
 {% block content %}
     {{ super() }}
 
-    <div id="name">{{ data.name }}</div>
-    <div id="birth">{{ data.birth }}</div>
     {% if data.photo %}
-        <div id="image-container">
-            <img src="{{ data.photo }}" alt="photograph of {{ data.name }}">
+        <div class="image-container">
+            <img class="polaroid" src="static/{{ data.photo }}" alt="photograph of {{ data.name }}">
         </div>
+
     {% endif %}
+
+    <table>
+        <tr>
+            <td>
+                <span class="fa fa-user"></span>
+            </td>
+            <td>
+                {{ data.name }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="fa fa-birthday-cake"></span>
+            </td>
+            <td>
+                {{ data.birth }}
+            </td>
+        </tr>
+    </table>
+
+
+
 
 {% endblock %}
