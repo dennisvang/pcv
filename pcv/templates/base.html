@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     {% block style %}
-        {% include 'style.html' %}
+        <style>
+            {# include the style file as incline css #}
+            {# so we don't need to include css file in the distribution #}
+            {% include 'base_style.css' %}
+        </style>
     {% endblock %}
     <title>{% block title %}PCV{% endblock %}</title>
 </head>
