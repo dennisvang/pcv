@@ -38,6 +38,9 @@
                 {% with section_id='references', data=references %}
                     {% include 'references.html' %}
                 {% endwith %}
+                {% with section_id='skills', data=skills %}
+                    {% include 'skills_short.html' %}
+                {% endwith %}
             </div>
             <div class="right">
                 {% with section_id='motto', data=person %}

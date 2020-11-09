@@ -3,7 +3,7 @@
     "name": "Someone Else",
     "birth": "1970 Jan 1",
     "photo": "sloth.png",
-    "motto": "I'm just a great person with incredible skills and without any shortcomings whatsoever."
+    "motto": "Frankly, I'm just a great person with incredible skills and without any shortcomings whatsoever."
   },
   "contact": {
     "label": "contact",
@@ -24,6 +24,7 @@
   },
   "languages": {
     "label": "languages",
+    "scale": 5,
     "list":[
       ["dutch", 5],
       ["english", 4],
@@ -61,6 +62,11 @@
         "name": "Erwin Ployer",
         "email": "e.m.ployer@email.com",
         "organization": "ACME inc."
+      },
+      {
+        "name": "Michael League",
+        "email": "michaelleague@email.com",
+        "organization": "Heligoland Railways"
       }
     ]
   },
@@ -105,6 +111,48 @@
           "no delays whatsoever"
         ]
 
+      }
+    ]
+  },
+  "skills": {
+    "label": "skills summary",
+    "scale": 5,
+    "list": [
+      {
+        "label": "Python",
+        "level": 4
+      },
+      {
+        "label": "C++",
+        "level": 3
+      },
+      {
+        "label": "JavaScript",
+        "level": 3
+      },
+      {
+        "label": "HTML",
+        "level": 3
+      },
+      {
+        "label": "Bash",
+        "level": 2
+      },
+      {
+        "label": "Django",
+        "level": 4
+      },
+      {
+        "label": "PyQt",
+        "level": 4
+      },
+      {
+        "label": "AWS",
+        "level": 3
+      },
+      {
+        "label": "Git",
+        "level": 3
       }
     ]
   }

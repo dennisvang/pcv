@@ -3,7 +3,7 @@ import logging
 import pathlib
 import json
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from pcv.filters import reformat, as_circles, sort_and_group
+from pcv.filters import reformat, as_circles, sort_and_group, sort_and_join_labels
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -25,4 +25,5 @@ def render(filename=None, source_path=None, template_name='onepage.html'):
     env.filters['reformat'] = reformat
     env.filters['as_circles'] = as_circles
     env.filters['sort_and_group'] = sort_and_group
+    env.filters['sort_and_join_labels'] = sort_and_join_labels
     return env.get_template(template_name).render(**data)

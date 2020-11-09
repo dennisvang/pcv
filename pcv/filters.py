@@ -50,3 +50,10 @@ def sort_and_group(item_list, date_field, group_field, reverse=True):
         else:
             current_group = group
     return item_list
+
+
+def sort_and_join_labels(
+        item_list, sort_field='level', reverse=True, delimiter=', '):
+    """ sort items by specified field and join item labels"""
+    item_list.sort(key=lambda i: i[sort_field], reverse=reverse)
+    return delimiter.join([item['label'] for item in item_list])
