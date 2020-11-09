@@ -10,17 +10,6 @@ h1 {
     color: #438496;
 }
 
-.label {
-    text-transform: uppercase;
-    letter-spacing: 0.3ch;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
-div.right div.label {
-    color: #438496;
-}
-
 blockquote {
     font-style: italic;
 }
@@ -74,10 +63,12 @@ img {
     padding: 5mm;
 }
 
-#motto {
-    background-color: transparent;
-    color: black;
-    margin: 2.4em 0;  {# top/bottom, left/right #}
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
 }
 
 .circles {
@@ -108,6 +99,50 @@ img {
 .column-data ul {
     padding-left: 2em;
     text-align: left;
+}
+
+table.technology {
+    width: 100%;
+    margin-left: 1em;
+}
+
+td.technology {
+    width: 50%;
+}
+
+div.right div.label {
+    color: #438496;
+}
+
+.page.technology {
+    padding: 10mm 15mm;  {# acts as actual page margin (top/bottom, left/right) #}
+}
+
+.label {
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.label.technology {
+    color: #438496;
+}
+
+.title {
+    height: 10%;
+}
+
+
+.flex-half {
+    width: 50%;
+    margin: 1em 0;
+}
+
+#motto {
+    background-color: transparent;
+    color: black;
+    margin: 2.4em 0;  {# top/bottom, left/right #}
 }
 
 #online .list-item {

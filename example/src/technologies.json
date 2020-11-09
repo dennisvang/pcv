@@ -1,9 +1,6 @@
 {
-  "person": {
-    "name": "Someone Else",
-    "email": "s.else@email.com"
-  },
   "technologies": {
+    "label": "technologies",
     "scale": 5,
     "list": [
       {

@@ -16,9 +16,6 @@ if source_path.joinpath('static').exists():
 
 # render to file
 with dist_path.joinpath('cv.html').open('w', encoding='utf-8') as o:
-    o.write(render(filename='cv.json', source_path=source_path,
-                   template_name='onepage.html'))
-
-with dist_path.joinpath('technologies.html').open('w', encoding='utf-8') as o:
-    o.write(render(filename='technologies.json', source_path=source_path,
-                   template_name='technologies.html'))
+    o.write(render(pages=['onepage.html', 'technologies.html'],
+                   data_files=['cv.json', 'technologies.json'],
+                   source_path=source_path))
