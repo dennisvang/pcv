@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    {{ super() }}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+
+    <style>
+        {# include the style file as inline css #}
+        {% include 'technologies_style.css' %}
+    </style>
+{% endblock %}
+
+{% block title %}
+    {{ person.name }}: Skills and Technologies
+{% endblock %}
+
+{% block pages %}
+    <div class="page">
+        <div class="title">
+            <h1>Skills and Technologies</h1>
+            <h2>{{ person.name }} ({{ person.email }})</h2>
+        </div>
+        <div class="flex-container">
+            {% for label, items in technologies.list|group_by_category %}
+                <div class="flex-half">
+                    <div class="label">
+                        {{ label }}
+                    </div>
+                    <table>
+                        {% for item in items %}
+                            <tr>
+                                <td class="name">
+                                    {{ item.label }}
+                                </td>
+                                <td class="circles">
+                                    {{ item.level|as_circles }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

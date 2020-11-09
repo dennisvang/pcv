@@ -1,0 +1,281 @@
+{
+  "person": {
+    "name": "Someone Else",
+    "email": "s.else@email.com"
+  },
+  "technologies": {
+    "scale": 5,
+    "list": [
+      {
+        "priority": 1,
+        "category": "programming languages",
+        "label": "Python",
+        "level": 4
+      },
+      {
+        "priority": 1,
+        "category": "programming languages",
+        "label": "Matlab",
+        "level": 4
+      },
+      {
+        "priority": 1,
+        "category": "programming languages",
+        "label": "C++",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "programming languages",
+        "label": "JavaScript",
+        "level": 3
+      },
+      {
+        "priority": 2,
+        "category": "programming languages",
+        "label": "Bash",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "markup languages",
+        "label": "HTML",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "markup languages",
+        "label": "MarkDown",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "markup languages",
+        "label": "reStructuredText",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "markup languages",
+        "label": "LaTeX",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "style languages",
+        "label": "CSS",
+        "level": 3
+      },
+      {
+        "priority": 2,
+        "category": "template languages",
+        "label": "Jinja",
+        "level": 2
+      },
+      {
+        "priority": 2,
+        "category": "query languages",
+        "label": "SQL",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "frameworks",
+        "label": "Django",
+        "level": 4
+      },
+      {
+        "priority": 1,
+        "category": "frameworks",
+        "label": "PyQt",
+        "level": 4
+      },
+      {
+        "priority": 1,
+        "category": "frameworks",
+        "label": "Flask",
+        "level": 2
+      },
+      {
+        "priority": 1,
+        "category": "version control systems",
+        "label": "git",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "cloud services",
+        "label": "AWS (EB, EC2, RDS, S3)",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "cloud services",
+        "label": "Bitbucket",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "cloud services",
+        "label": "GitHub",
+        "level": 2
+      },
+      {
+        "priority": 1,
+        "category": "databases",
+        "label": "SQLite",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "databases",
+        "label": "PostgreSQL",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "testing",
+        "label": "unittest",
+        "level": 3
+      },
+      {
+        "priority": 2,
+        "category": "testing",
+        "label": "Locust",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "distribution",
+        "label": "PyInstaller",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "distribution",
+        "label": "PyUpdater",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "distribution",
+        "label": "NSIS",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "data acquisition",
+        "label": "pySerial",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "data acquisition",
+        "label": "imageio",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "data acquisition",
+        "label": "LabJack LJM",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "data acquisition",
+        "label": "Point Grey FlyCapture SDK",
+        "level": 2
+      },
+      {
+        "priority": 1,
+        "category": "data acquisition",
+        "label": "FFmpeg",
+        "level": 2
+      },
+      {
+        "priority": 1,
+        "category": "package managers",
+        "label": "Conda",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "package managers",
+        "label": "pip",
+        "level": 3
+      },
+      {
+        "priority": 1,
+        "category": "package managers",
+        "label": "pipenv",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "integrated dev. environments",
+        "label": "PyCharm",
+        "level": 4
+      },
+      {
+        "priority": 1,
+        "category": "integrated dev. environments",
+        "label": "Arduino IDE",
+        "level": 2
+      },
+      {
+        "priority": 2,
+        "category": "e-learning specifications",
+        "label": "xAPI",
+        "level": 1
+      },
+      {
+        "priority": 2,
+        "category": "e-learning specifications",
+        "label": "cmi5",
+        "level": 1
+      },
+      {
+        "priority": 1,
+        "category": "platforms",
+        "label": "Linux",
+        "level": 2
+      },
+      {
+        "priority": 1,
+        "category": "platforms",
+        "label": "Windows",
+        "level": 4
+      },
+      {
+        "priority": 2,
+        "category": "computer aided design",
+        "label": "SolidWorks",
+        "level": 4
+      },
+      {
+        "priority": 2,
+        "category": "computer aided design",
+        "label": "Solid Edge",
+        "level": 4
+      },
+      {
+        "priority": 2,
+        "category": "computer aided design",
+        "label": "Eagle",
+        "level": 3
+      },
+      {
+        "priority": 2,
+        "category": "computer aided design",
+        "label": "KiCad",
+        "level": 3
+      },
+      {
+        "priority": 2,
+        "category": "computer aided design",
+        "label": "Inkscape",
+        "level": 3
+      }
+    ]
+  }
+}

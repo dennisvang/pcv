@@ -57,3 +57,14 @@ def sort_and_join_labels(
     """ sort items by specified field and join item labels"""
     item_list.sort(key=lambda i: i[sort_field], reverse=reverse)
     return delimiter.join([item['label'] for item in item_list])
+
+
+def group_by_category(item_list):
+    """ collect items by category """
+    categories = dict()
+    for item in item_list:
+        key = item['category']
+        if key not in categories:
+            categories[key] = []
+        categories[key].append(item)
+    return categories.items()
