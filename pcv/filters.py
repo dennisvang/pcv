@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime
+from operator import itemgetter
 
 
 logger = logging.getLogger(__name__)
@@ -52,11 +53,11 @@ def sort_and_group(item_list, date_field, group_field, reverse=True):
     return item_list
 
 
-def sort_and_join_labels(
-        item_list, sort_field='level', reverse=True, delimiter=', '):
-    """ sort items by specified field and join item labels"""
-    item_list.sort(key=lambda i: i[sort_field], reverse=reverse)
-    return delimiter.join([item['label'] for item in item_list])
+def sort_and_join_labels(item_list, sort_field='level', reverse=True,
+                         delimiter=', '):
+    """ sort items by specified field and join item labels """
+    sorted_list = sorted(item_list, key=itemgetter(sort_field), reverse=reverse)
+    return delimiter.join([item['label'] for item in sorted_list])
 
 
 def group_by_category(item_list):
@@ -68,3 +69,31 @@ def group_by_category(item_list):
             categories[key] = []
         categories[key].append(item)
     return categories.items()
+
+
+def kilo(value):
+    return f'{round(value/1000)}k'
+
+
+def sort_by_level_and_priority(item_list):
+    """
+    Note that, due to Python's stable sorting, the original order is
+    preserved if items have the same value.
+    """
+    item_list.sort(key=itemgetter('level'), reverse=True)
+    item_list.sort(key=itemgetter('priority'), reverse=False)
+    return item_list
+
+
+def minimum_level_and_priority(item_list, level=0, priority=float('inf'),
+                               exclude=None):
+    """
+    create a new list with items that have sufficient level and priority
+    """
+    if exclude is None:
+        exclude = []
+    return [item for item in item_list
+            if (item['priority'] <= priority and
+                ('level' not in item or item['level'] >= level) and
+                item.get('label', '').lower() not in exclude)
+            ]

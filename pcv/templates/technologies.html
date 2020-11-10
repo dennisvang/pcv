@@ -10,7 +10,7 @@
                     {{ label }}
                 </div>
                 <table class="technology">
-                    {% for item in items %}
+                    {% for item in items|sort_by_level_and_priority %}
                         <tr>
                             <td class="technology">
                                 {{ item.label }}

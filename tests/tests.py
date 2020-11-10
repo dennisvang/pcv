@@ -1,6 +1,15 @@
 from unittest import TestCase
-from jinja2 import Template
+from tempfile import TemporaryDirectory
+from pathlib import Path
+from pcv import start, DEFAULTS_PATH
 
-# From the YAML spec: "every JSON file is also a valid YAML file"
-# Ref: https://yaml.org/spec/1.2/spec.html#id2759572
 
+class StartTests(TestCase):
+    def test_initialize(self):
+        with TemporaryDirectory() as tempdirname:
+            temp_path = Path(tempdirname)
+            start.initialize(destination=temp_path)
+            # check directory contents recursively ('**')
+            self.assertEqual(
+                sorted(path.name for path in DEFAULTS_PATH.glob('**/*')),
+                sorted(path.name for path in temp_path.glob('**/*')))

@@ -2,8 +2,20 @@
 {% block content %}
     {{ super() }}
 
-    {% for item in data.list %}
-        <div class="list-item">{{ item }}</div>
-    {% endfor %}
+    <table>
+        {% for item in data.list %}
+            <tr>
+                <td>
+                    {{ item.label }}:
+                </td>
+                <td>
+                    <a href="{{ item.url }}" class="link">{{ item.id }}</a>
+                    {% if item.reputation %}
+                        ({{ item.reputation|kilo }})
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
 
 {% endblock %}

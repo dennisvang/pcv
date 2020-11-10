@@ -8,7 +8,7 @@
         <style>
             {# include the style files as inline css #}
             {# so we don't need to include css file in the distribution #}
-            {% for style in styles %}
+            {% for style in settings.STYLES %}
                 {% include style %}
             {% endfor %}
         </style>
@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="page-container">
-    {% for page in pages %}
+    {% for page in settings.PAGES %}
         {% include page %}
     {% endfor %}
 </div>

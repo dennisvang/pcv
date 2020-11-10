@@ -4,6 +4,12 @@
     "scale": 5,
     "list": [
       {
+        "priority": 2,
+        "category": "programming languages",
+        "label": "Bash",
+        "level": 1
+      },
+      {
         "priority": 1,
         "category": "programming languages",
         "label": "Python",
@@ -28,25 +34,19 @@
         "level": 3
       },
       {
-        "priority": 2,
-        "category": "programming languages",
-        "label": "Bash",
-        "level": 1
-      },
-      {
         "priority": 1,
         "category": "markup languages",
         "label": "HTML",
         "level": 3
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "markup languages",
         "label": "MarkDown",
         "level": 3
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "markup languages",
         "label": "reStructuredText",
         "level": 3
@@ -106,13 +106,13 @@
         "level": 3
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "cloud services",
         "label": "Bitbucket",
         "level": 3
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "cloud services",
         "label": "GitHub",
         "level": 2
@@ -208,13 +208,13 @@
         "level": 1
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "integrated dev. environments",
         "label": "PyCharm",
         "level": 4
       },
       {
-        "priority": 1,
+        "priority": 2,
         "category": "integrated dev. environments",
         "label": "Arduino IDE",
         "level": 2

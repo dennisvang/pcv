@@ -9,49 +9,86 @@
     "label": "contact",
     "telephone": "0123456789",
     "email": "s.else@email.com",
-    "address": {
-      "street": "Long road 123",
-      "city": "Smalltown",
-      "country": "GB"
-    }
+    "street": "Long road 123",
+    "city": "Smalltown",
+    "country": "GB"
   },
   "online": {
     "label": "web",
     "list": [
-      "stackoverflow.com: 0000000",
-      "github.com: justsomeoneelse"
+      {
+        "priority": 1,
+        "label": "Stack Overflow",
+        "id": "0000000",
+        "url": "https://stackoverflow.com/users/0000000/someoneelse",
+        "reputation": 56000
+      },
+      {
+        "priority": 1,
+        "label": "GitHub",
+        "id": "smnls",
+        "url": "https://github.com/smnls"
+      }
     ]
   },
   "languages": {
     "label": "languages",
     "scale": 5,
     "list":[
-      ["dutch", 5],
-      ["english", 4],
-      ["french", 2],
-      ["german", 1]
+      {
+        "priority": 1,
+        "label": "dutch",
+        "level": 5,
+        "description": "native"
+      },
+      {
+        "priority": 1,
+        "label": "english",
+        "level": 4,
+        "description": "CEF C1"
+      },
+      {
+        "priority": 2,
+        "label": "french",
+        "level": 2
+      },
+      {
+        "priority": 2,
+        "label": "german",
+        "level": 1
+      }
     ]
   },
   "education": {
     "label": "education",
     "list": [
       {
+        "priority": 1,
         "date": "1990-12-31",
         "degree": "Ph.D.",
         "description": "Fuzzy logic",
         "organization": "Some University"
       },
       {
+        "priority": 1,
         "date": "1986-07-01",
         "degree": "M.Sc.",
         "description": "Horology",
         "organization": "Another University"
       },
       {
+        "priority": 2,
         "date": "1984-08-15",
         "degree": "B.Sc.",
         "description": "Horology",
         "organization": "Another University"
+      },
+      {
+        "priority": 3,
+        "date": "1970-03-30",
+        "degree": "n/a",
+        "description": "",
+        "organization": "Some Primary School"
       }
     ]
   },
@@ -64,7 +101,7 @@
         "organization": "ACME inc."
       },
       {
-        "name": "Michael League",
+        "name": "M. League",
         "email": "michaelleague@email.com",
         "organization": "Heligoland Railways"
       }
@@ -74,10 +111,11 @@
     "label": "work experience",
     "list": [
       {
+        "priority": 1,
         "start": "1996-12-24",
         "end": "present",
         "organization": "ACME Inc.",
-        "function": "Chief Executive Chair Warmer",
+        "position": "Chief Executive Chair Warmer",
         "tasks": [
           "ensure continuity of chair warmth",
           "maintain physical comfort levels"
@@ -87,10 +125,11 @@
         ]
       },
       {
+        "priority": 1,
         "start": "1992-01-15",
         "end": "1996-12-23",
         "organization": "ACME Inc.",
-        "function": "Junior Chair Warmer",
+        "position": "Junior Chair Warmer",
         "tasks": [
           "ensure chair does not cool off",
           "engage in fruitful conversation"
@@ -100,63 +139,17 @@
         ]
       },
       {
+        "priority": 1,
         "start": "1990-01-01",
         "end": "1992-01-01",
         "organization": "Heligoland Railways",
-        "function": "Operations specialist",
+        "position": "Operations specialist",
         "tasks": [
           "ensure smooth railway operations"
         ],
         "highlights": [
           "no delays whatsoever"
         ]
-
-      }
-    ]
-  },
-  "skills": {
-    "label": "skills summary",
-    "scale": 5,
-    "list": [
-      {
-        "label": "Python",
-        "level": 4
-      },
-      {
-        "label": "C++",
-        "level": 3
-      },
-      {
-        "label": "Matlab",
-        "level": 4
-      },
-      {
-        "label": "JavaScript",
-        "level": 3
-      },
-      {
-        "label": "HTML",
-        "level": 3
-      },
-      {
-        "label": "Bash",
-        "level": 2
-      },
-      {
-        "label": "Django",
-        "level": 4
-      },
-      {
-        "label": "PyQt",
-        "level": 4
-      },
-      {
-        "label": "AWS",
-        "level": 3
-      },
-      {
-        "label": "Git",
-        "level": 3
       }
     ]
   }
