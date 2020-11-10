@@ -2,6 +2,8 @@
 __pycache__/
 .idea/
 dist/
+build/
+*.egg-info/
 
 # file types
 *.pdf
