@@ -16,8 +16,11 @@ DEFAULTS = 'defaults'
 SOURCE = 'source'
 DIST = 'dist'
 STATIC = 'static'
-# path to package defaults
-DEFAULTS_PATH = pathlib.Path(__file__).resolve().parent.joinpath(DEFAULTS)
+TEMPLATES = 'templates'
+# package paths
+PACKAGE_PATH = pathlib.Path(__file__).resolve().parent
+DEFAULTS_PATH = PACKAGE_PATH.joinpath(DEFAULTS)
+TEMPLATES_PATH = PACKAGE_PATH.joinpath(TEMPLATES)
 # path to directory containing the script that invoked python interpreter
 CALLER_PATH = pathlib.Path(sys.path[0]).resolve()
 # project paths
@@ -47,7 +50,8 @@ def render(settings):
             exclude=section_settings.get('exclude', []))
     # configure template environment
     env = Environment(
-        loader=FileSystemLoader(searchpath=settings.TEMPLATE_FOLDERS),
+        loader=FileSystemLoader(
+            searchpath=[TEMPLATES_PATH] + settings.TEMPLATE_FOLDERS),
         autoescape=select_autoescape(['html', 'css']))
     # register template filters
     env.filters['reformat'] = reformat

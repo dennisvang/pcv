@@ -119,7 +119,7 @@ div.right div.label {
     color: {{ settings.BACKGROUND_COLOR }};
 }
 
-.page.technology {
+.page.page-padding {
     padding: 10mm 15mm;  {# acts as actual page margin (top/bottom, left/right) #}
 }
 
