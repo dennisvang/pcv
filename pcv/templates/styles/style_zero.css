@@ -144,6 +144,14 @@ div.right div.label {
     margin: 1em 0;
 }
 
+.publication {
+    font-size: medium;
+}
+
+.publication-info {
+    font-style: italic;
+}
+
 #motto {
     background-color: transparent;
     color: black;

@@ -34,7 +34,7 @@
   "languages": {
     "label": "languages",
     "scale": 5,
-    "list":[
+    "list": [
       {
         "priority": 1,
         "label": "dutch",
@@ -150,6 +150,25 @@
         "highlights": [
           "no delays whatsoever"
         ]
+      }
+    ]
+  },
+  "publications": {
+    "label": "publications",
+    "list": [
+      {
+        "priority": 1,
+        "authors": "Else, S., Other, A.N., et al.",
+        "date": "2019-01-01",
+        "title": "Lessons learned in ten years of warming seats",
+        "publication": "Journal of the international chair warmers association, 10(1), pp.18-55"
+      },
+      {
+        "priority": 1,
+        "authors": "Else, S., et al.",
+        "date": "2013-01-01",
+        "title": "Smooth sailing on rails",
+        "publication": "Journal of Railway Operations, 44(3), pp.298-302"
       }
     ]
   }
