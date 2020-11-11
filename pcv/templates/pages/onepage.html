@@ -2,33 +2,33 @@
     <div class="flex-container">
         <div class="left">
             {% with section_id='person', data=person %}
-                {% include 'person.html' %}
+                {% include 'sections/person.html' %}
             {% endwith %}
             {% with section_id='contact', data=contact %}
-                {% include 'contact.html' %}
+                {% include 'sections/contact.html' %}
             {% endwith %}
             {% with section_id='online', data=online %}
-                {% include 'online.html' %}
+                {% include 'sections/online.html' %}
             {% endwith %}
             {% with section_id='languages', data=languages %}
-                {% include 'languages.html' %}
+                {% include 'sections/languages.html' %}
             {% endwith %}
             {% with section_id='education', data=education %}
-                {% include 'education.html' %}
+                {% include 'sections/education.html' %}
             {% endwith %}
             {% with section_id='references', data=references %}
-                {% include 'references.html' %}
+                {% include 'sections/references.html' %}
             {% endwith %}
             {% with section_id='skills', data=skills %}
-                {% include 'skills_short.html' %}
+                {% include 'sections/skills_short.html' %}
             {% endwith %}
         </div>
         <div class="right">
             {% with section_id='motto', data=person %}
-                {% include 'motto.html' %}
+                {% include 'sections/motto.html' %}
             {% endwith %}
             {% with section_id='experience', data=experience %}
-                {% include 'experience.html' %}
+                {% include 'sections/experience.html' %}
             {% endwith %}
         </div>
     </div>
