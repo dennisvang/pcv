@@ -9,6 +9,11 @@ create package:
 https://packaging.python.org/guides/distributing-packages-using-setuptools/
 
 https://docs.python.org/3.8/distutils/setupscript.html#installing-package-data
+
+
+we can also install the package locally using
+
+	pipenv install -e .
     
 """
 

@@ -13,3 +13,17 @@ Disclaimer
 This project is intended for personal use, so it is not production-ready.
 
 There are many similar projects out there that are much more complete.
+
+Installation
+------------
+
+local installation using pipenv:
+
+either install into site packages using
+
+	pipenv install <path to pcv-x.y.z.tar.gz>
+
+or install link using 
+
+	pipenv install -e <path to pcv/setup.py>
+
