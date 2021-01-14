@@ -76,17 +76,6 @@
       }
     ]
   },
-  "skills": {
-    "label": "skills summary",
-    "scale": 5,
-    "list": [
-      {
-        "priority": 1,
-        "label": "",
-        "level": 3
-      }
-    ]
-  },
   "technologies": {
     "label": "technologies",
     "scale": 5,
