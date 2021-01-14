@@ -1,5 +1,5 @@
 FILENAME = 'cv.html'
-JSON_FILES = ['template.json']
+JSON_FILES = ['cv_template.json']
 
 TEMPLATE_FOLDERS = []  # relative to the "source" folder
 PAGES = ['onepage.html', 'technologies.html', 'publications.html']

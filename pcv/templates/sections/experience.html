@@ -14,9 +14,10 @@
                     {{ item.start|reformat('%Y') }} - {{ item.end|reformat('%Y') }}:
                 </td>
                 <td class="position">
-                    {{ item.position }}
+                    {{ item.position }} ({{ item.division }})
                 </td>
             </tr>
+            {% if item.tasks %}
             <tr>
                 <td class="column-header">
 
@@ -30,6 +31,8 @@
                     </ul>
                 </td>
             </tr>
+            {% endif %}
+            {% if item.highlights %}
             <tr>
                 <td class="column-header">
 
@@ -43,7 +46,7 @@
                     </ul>
                 </td>
             </tr>
-
+            {% endif %}
         {% endfor %}
     </table>
 

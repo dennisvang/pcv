@@ -10,6 +10,7 @@
     "telephone": "0123456789",
     "email": "s.else@email.com",
     "street": "Long road 123",
+    "postal": "123456",
     "city": "Smalltown",
     "country": "GB"
   },
@@ -115,6 +116,7 @@
         "start": "1996-12-24",
         "end": "present",
         "organization": "ACME Inc.",
+        "division": "R&D division",
         "position": "Chief Executive Chair Warmer",
         "tasks": [
           "ensure continuity of chair warmth",
@@ -129,6 +131,7 @@
         "start": "1992-01-15",
         "end": "1996-12-23",
         "organization": "ACME Inc.",
+        "division": "Sales and acquisition",
         "position": "Junior Chair Warmer",
         "tasks": [
           "ensure chair does not cool off",
@@ -143,6 +146,7 @@
         "start": "1990-01-01",
         "end": "1992-01-01",
         "organization": "Heligoland Railways",
+        "division": "Rail operations division",
         "position": "Operations specialist",
         "tasks": [
           "ensure smooth railway operations"

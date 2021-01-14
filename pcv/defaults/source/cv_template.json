@@ -10,6 +10,7 @@
     "telephone": "",
     "email": "",
     "street": "",
+    "postal": "",
     "city": "",
     "country": ""
   },
@@ -68,6 +69,7 @@
         "start": "1996-12-24",
         "end": "present",
         "organization": "",
+        "division": "",
         "position": "",
         "tasks": [""],
         "highlights": [""]
