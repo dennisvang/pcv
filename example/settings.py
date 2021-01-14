@@ -1,8 +1,8 @@
 FILENAME = 'cv.html'
 JSON_FILES = ['cv.json', 'technologies.json']
 
-TEMPLATE_FOLDERS = []
-PAGES = ['onepage.html', 'technologies.html', 'publications.html']
+TEMPLATE_FOLDERS = ['templates']  # relative to "source" folder
+PAGES = ['onepage.html', 'technologies.html', 'custom_publications.html']
 STYLES = ['style_pages.css', 'style_zero.css']
 
 BACKGROUND_COLOR = '#438496'

@@ -49,10 +49,11 @@ def render(settings):
             priority=section_settings.get('priority', float('inf')),
             exclude=section_settings.get('exclude', []))
     # configure template environment
-    env = Environment(
-        loader=FileSystemLoader(
-            searchpath=[TEMPLATES_PATH] + settings.TEMPLATE_FOLDERS),
-        autoescape=select_autoescape(['html', 'css']))
+    templates_paths = [SOURCE_PATH.joinpath(folder)
+                       for folder in settings.TEMPLATE_FOLDERS]
+    templates_paths.append(TEMPLATES_PATH)
+    env = Environment(loader=FileSystemLoader(searchpath=templates_paths),
+                      autoescape=select_autoescape(['html', 'css']))
     # register template filters
     env.filters['reformat'] = reformat
     env.filters['as_circles'] = as_circles

@@ -1,7 +1,7 @@
 FILENAME = 'cv.html'
 JSON_FILES = ['template.json']
 
-TEMPLATE_FOLDERS = []
+TEMPLATE_FOLDERS = []  # relative to the "source" folder
 PAGES = ['onepage.html', 'technologies.html', 'publications.html']
 STYLES = ['style_pages.css', 'style_zero.css']
 
