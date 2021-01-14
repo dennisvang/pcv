@@ -6,13 +6,24 @@ from operator import itemgetter
 logger = logging.getLogger(__name__)
 
 
+def to_iso_date(value):
+    """
+    handle incomplete iso strings, so we can specify <year> or <year-month>,
+    in addition to <year-month-day>
+    """
+    hyphen_count = value.count('-')
+    if hyphen_count < 2:
+        value += '-01' * (2 - hyphen_count)
+    return value
+
+
 def as_date(value):
     """
     convert an iso 8601 date string to a datetime.date, return current date
     if string is not a valid iso string (e.g. empty string or "present")
     """
     try:
-        return datetime.fromisoformat(value).date()
+        return datetime.fromisoformat(to_iso_date(value)).date()
     except ValueError as e:
         logger.debug(e)
         return datetime.today().date()
