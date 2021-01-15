@@ -36,7 +36,7 @@ with open('README.md', 'r') as readme:
 
 setuptools.setup(
     name='pcv',
-    version="0.0.1",
+    version="0.0.2",
     author='D. van Gerwen',
     author_email='djvg@protonmail.com',
     description='Build a crisp CV (resume), as printable HTML, from JSON.',
