@@ -1,20 +1,27 @@
-## About PCV
+## About pcv
 
-PCV creates a printable resume (CV) in HTML format, based on data stored in JSON.
+Pcv creates a printable resume (curriculum vitae) in HTML format, based on data stored in JSON.
 
-YAML would be easier to write, but we don't want the extra dependency required (e.g. PyYAML).
+The basic idea is to use JSON to store all data related to you resume, then use a settings file to tailor the displayed data to a specific job-application.
 
-Instead of using a Python package to handle PDF creation (e.g. ReportLab or PyQT), the HTML output includes a print style, so we can print to PDF using the browser.
+## History
 
-## Disclaimer
+The original intention was to create just any kind of mini-framework, from scratch (except for the template language), in order to gain some insight into framework architecture in general.
+The specific choice to focus on resume creation was just convenient at the time.
 
-This project is intended for personal use, so it is not production-ready.
+## Status
+
+The project is still in the early stages of development, so it is **not** production-ready.
 
 There are many similar projects out there that are much more complete.
 
 ## Dependencies
 
-Although we aim for a minimum number of external dependencies, we cannot do without `jinja2`. 
+Although we aim for a minimum number of external dependencies, we cannot do without `jinja2`.
+
+YAML would be easier to write than JSON, but we don't want the extra dependency required (e.g. PyYAML).
+
+Instead of using another external dependency to handle PDF creation (e.g. ReportLab or PyQT), the HTML output includes a print style, so we can print to PDF using the browser.
 
 ## Installation
 
@@ -22,9 +29,9 @@ Installation from pypi, using pipenv:
 
     pipenv install pcv
 
-An alternative would be local installation using pipenv:
+An alternative would be local installation using e.g. pipenv:
 
-either install into site packages using
+Either install into site packages using
 
 	pipenv install <path to pcv-x.y.z.tar.gz>
 
@@ -56,6 +63,8 @@ When `cv_template.json` is ready, call `makecv.py`:
     python makecv.py
 
 This will create your resume, as an HTML file, in the `dist` folder.
+
+Whenever you make a change to your JSON or settings, run `makecv.py` again.
 
 ## Settings
 
