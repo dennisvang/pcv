@@ -1,6 +1,6 @@
 ## About pcv
 
-Pcv creates a printable resume (curriculum vitae) in HTML format, based on data stored in JSON.
+Pcv creates a printable curriculum vitae (resume) in HTML format, based on data stored in JSON.
 
 The basic idea is to use JSON to store all data related to you resume, then use a settings file to tailor the displayed data to a specific job-application.
 
@@ -21,7 +21,7 @@ Although we aim for a minimum number of external dependencies, we cannot do with
 
 YAML would be easier to write than JSON, but we don't want the extra dependency required (e.g. PyYAML).
 
-Instead of using another external dependency to handle PDF creation (e.g. ReportLab or PyQT), the HTML output includes a print style, so we can print to PDF using the browser.
+Instead of using another external dependency to handle PDF creation (e.g. ReportLab or PyQT), we use CSS print styles so we can print to PDF using the browser. This is not the most convenient, but it works in most cases.
 
 ## Installation
 
@@ -35,7 +35,7 @@ Either install into site packages using
 
 	pipenv install <path to pcv-x.y.z.tar.gz>
 
-or install a link to the source using 
+or install as an [editable dependency](https://pipenv.pypa.io/en/latest/basics/#editable-dependencies-e-g-e), using 
 
 	pipenv install -e <path to pcv/setup.py>
 
