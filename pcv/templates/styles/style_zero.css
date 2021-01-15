@@ -7,7 +7,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2ch;
-    color: {{ settings.BACKGROUND_COLOR }};
+    color: {{ settings.THEME_COLOR }};
 }
 
 blockquote {
@@ -51,8 +51,8 @@ img {
 }
 
 .left {
-    background-color: {{ settings.BACKGROUND_COLOR }};
-    color: {{ settings.FONT_COLOR }};
+    background-color: {{ settings.THEME_COLOR }};
+    color: {{ settings.THEME_FONT_COLOR }};
     flex: 0 0 60mm;
     padding: 5mm;
 }
@@ -78,7 +78,7 @@ img {
 
 .left .link {
     text-decoration: none;
-    color: {{ settings.FONT_COLOR }};
+    color: {{ settings.THEME_FONT_COLOR }};
 }
 
 .section {
@@ -116,7 +116,7 @@ td.technology {
 }
 
 div.right div.label {
-    color: {{ settings.BACKGROUND_COLOR }};
+    color: {{ settings.THEME_COLOR }};
 }
 
 .page.page-padding {
@@ -131,7 +131,7 @@ div.right div.label {
 }
 
 .label.technology {
-    color: {{ settings.BACKGROUND_COLOR }};
+    color: {{ settings.THEME_COLOR }};
 }
 
 .title {
